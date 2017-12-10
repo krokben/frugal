@@ -1,0 +1,28 @@
+.menu {
+  animation: slideInFromRight 1s forwards;
+  background: #e4f1fe;
+  border-left: 1px solid #22a7f0;
+  bottom: 0;
+  box-sizing: border-box;
+  color: #22a7f0;
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+  right: -100px;
+  text-align: right;
+  top: 60px;
+
+  &__item {
+    cursor: pointer;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+@keyframes slideInFromRight {
+  100% {right: 0;}
+}

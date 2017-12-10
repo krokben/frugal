@@ -1,0 +1,15 @@
+.header {
+  background: #e4f1fe;
+  border-bottom: 1px solid #22a7f0;
+  box-sizing: border-box;
+  color: #22a7f0;
+  font-size: 25px;
+  height: 60px;
+  padding: 15px;
+
+  &__trigram {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+  }
+}
