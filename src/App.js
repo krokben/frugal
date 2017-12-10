@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import appActions from './actions/appActions';
 import BEMHelper from 'react-bem-helper';
 import './App.css';
 
@@ -13,4 +16,14 @@ class App extends Component {
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+  return state;
+}
+
+function mapDispatchToProps(dispatch) {
+  return {
+    appActions: bindActionCreators(appActions, dispatch),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
